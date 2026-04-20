@@ -24,7 +24,7 @@ export const KAFKA_TOPICS = {
   PAYMENT_FAILED: 'payment.failed',
   PAYMENT_REFUNDED: 'payment.refunded',
 
-  // Noticiation triggers
+  // Notification triggers
   SEND_EMAIL: 'notification.send-email',
   SEND_PUSH: 'notification.send-push',
 } as const;
