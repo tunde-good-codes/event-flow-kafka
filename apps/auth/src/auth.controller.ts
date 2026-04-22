@@ -17,10 +17,6 @@ import { AuthGuard } from '@nestjs/passport';
 export class AuthController {
   constructor(private readonly authService: AuthService) {}
 
-  @Get()
-  getHello(): string {
-    return this.authService.getHello();
-  }
   @Post('register')
   register(@Body() dto: RegisterDto) {
     return this.authService.register(dto.email, dto.password, dto.name);
