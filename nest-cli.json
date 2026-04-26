@@ -99,6 +99,15 @@
         "tsConfigPath": "apps/microservice-nest-api-service/tsconfig.app.json"
       }
     },
+    "notifications": {
+      "type": "application",
+      "root": "apps/notifications",
+      "entryFile": "main",
+      "sourceRoot": "apps/notifications/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/notifications/tsconfig.app.json"
+      }
+    },
     "search": {
       "type": "application",
       "root": "apps/search",
