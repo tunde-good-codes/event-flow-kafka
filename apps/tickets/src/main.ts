@@ -6,7 +6,6 @@ import { TicketsModule } from './tickets.module';
 async function bootstrap() {
   const app = await NestFactory.create(TicketsModule);
 
-  //Enable validation
   app.useGlobalPipes(
     new ValidationPipe({
       whitelist: true,
