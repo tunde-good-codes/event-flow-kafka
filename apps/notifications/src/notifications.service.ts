@@ -33,6 +33,9 @@ export class NotificationsService {
     );
   }
 
+  getHello(): string {
+    return `Hello World!`;
+  }
   async sendTicketPurchasedEmail(data: {
     userId: string;
     email?: string;

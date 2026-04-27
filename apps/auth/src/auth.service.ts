@@ -29,6 +29,9 @@ export class AuthService implements OnModuleInit {
     await this.kafkClient.connect();
   }
 
+  getHello() {
+    return 'Hello world!';
+  }
   async register(email: string, password: string, name: string) {
     // check if user exists
     const exitingUser = await this.dbService.db

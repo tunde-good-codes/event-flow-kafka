@@ -16,6 +16,10 @@ export class NotificationsController {
     return { status: 'ok', service: 'notifications-service' };
   }
 
+  @Get('')
+  getHello(): string {
+    return `Hello World!`;
+  }
   @EventPattern(KAFKA_TOPICS.USER_REGISTERED)
   async handleUserRegistered(
     @Payload() data: { userId: string; email: string; name: string },
